@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffd700;
+  line-height: 1.6;
+}
+
+.background-overlay {
+  background: url('https://i.ibb.co/GQW3xBY4/ai-generated-8221927-1920.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffd700;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* Logo */
+.logo-container {
+  margin-top: 10px;
+}
+
+.logo {
+  width: 180px;
+  max-width: 90%;
+  height: auto;
+}
+
+/* Sections */
+section {
+  padding: 40px 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 15px;
+}
+
+/* Text Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+/* Buttons */
+.read-more-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #ffcc00;
+}
+
+/* Form */
+.form-section {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffd700;
+  margin-top: 40px;
+  border-top: 1px solid #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+}

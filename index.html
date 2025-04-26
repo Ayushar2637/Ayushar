@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayushar - Ancient Wisdom, Modern Healing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Prompt', sans-serif;
+      background: url('https://i.ibb.co/GQW3xBY4/ai-generated-8221927-1920.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffd700;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 3px;
+      width: 25px;
+      background-color: #ffd700;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    .home {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .slogan {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .trust-section, .about-us, .how-it-works, .form-section {
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 20px;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .slogan {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="https://i.ibb.co/mVkthyvZ/AYUSHAR-2.png" alt="Ayushar Logo" class="logo" />
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#find-doctors">Find Doctors</a></li>
+        <li><a href="#find-products">Find Products</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h1 class="slogan">Ancient Wisdom, Modern Healing</h1>
+
+    <div class="trust-section">
+      <h2>Doctor Verification & Trust</h2>
+      <p>Verified Doctors. Authentic Ayurveda. Certified Care. No Compromise.</p>
+
+      <h2>Product Quality</h2>
+      <p>Lab-Tested. Ayurveda-Approved. Tested for Truth. Trusted for Health.<br>No False Claims, Only Real Results.</p>
+    </div>
+
+    <div class="form-section">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfF_xnTL2yUvDyTQZs8g6Ma_0jKgFAwpuTztIgo9U1jdwDWTQ/viewform?embedded=true">Loading…</iframe>
+    </div>
+
+    <div id="about-us" class="about-us">
+      <h2>About Us</h2>
+      <p id="about-short">Ayushar is India’s first and only digital platform dedicated to empowering Ayurvedic practitioners...</p>
+      <button id="read-more-about">Read More</button>
+      <p id="about-full" style="display:none;">Ayushar is India’s first and only digital platform dedicated to empowering Ayurvedic practitioners with modern digital tools—bringing ancient solutions to modern lives. We aim to revive and promote Ayurveda by supporting practitioners and offering people a healthier lifestyle with minimal or no side effects.</p>
+    </div>
+
+    <div id="how-it-works" class="how-it-works">
+      <h2>How Ayushar Works?</h2>
+      <p id="works-short">At Ayushar, authenticity and trust are our top priorities.</p>
+      <button id="read-more-works">Read More</button>
+      <p id="works-full" style="display:none;">We personally verify each Ayurvedic doctor listed on our platform by checking their practice, reviewing patient records, and validating their medical certifications—eliminating the chances of scammers.<br><br>We also verify Ayurvedic products by conducting independent lab tests to ensure that all health claims are truthful and not exaggerated.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Ayushar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Read More Buttons
+    document.getElementById("read-more-about").addEventListener("click", function() {
+      document.getElementById("about-short").style.display = "none";
+      document.getElementById("read-more-about").style.display = "none";
+      document.getElementById("about-full").style.display = "block";
+    });
+
+    document.getElementById("read-more-works").addEventListener("click", function() {
+      document.getElementById("works-short").style.display = "none";
+      document.getElementById("read-more-works").style.display = "none";
+      document.getElementById("works-full").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
